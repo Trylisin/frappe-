@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-06 15:37:44.644041",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "provinceid",
+  "description",
+  "localdescription",
+  "provincedesc",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "provinceid",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Province",
+   "options": "Province",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description",
+   "length": 5,
+   "reqd": 1
+  },
+  {
+   "fieldname": "localdescription",
+   "fieldtype": "Data",
+   "label": "Local Description"
+  },
+  {
+   "fetch_from": "provinceid.description",
+   "fieldname": "provincedesc",
+   "fieldtype": "Data",
+   "label": "Province Description",
+   "no_copy": 1,
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "District",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-09-06 16:12:57.767164",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "District",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
