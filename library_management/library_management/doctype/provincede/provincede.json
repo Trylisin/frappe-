@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-09-07 09:16:00.776599",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "people",
+  "amount",
+  "qty",
+  "total",
+  "currency"
+ ],
+ "fields": [
+  {
+   "fieldname": "people",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "People",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "label": "Qty",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Select",
+   "label": "Currency",
+   "options": "KHR\nUSD",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-09-07 14:22:06.988255",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "ProvinceDe",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
